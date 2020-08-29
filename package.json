@@ -1,0 +1,6 @@
+{
+  "dependencies": {},
+  "devDependencies": {
+    "postcss-import": "^12.0.1"
+  }
+}
