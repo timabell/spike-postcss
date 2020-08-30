@@ -1,12 +1,18 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
-		uglify: {
+		postcss: {
+			options: {
+				processors: [
+					require('tailwindcss'),
+					require('autoprefixer')
+				]
+			},
 			build: {
-				src: 'gruntme.css',
-				dest: 'gruntme.css.out'
+				src: 'input.css',
+				dest: 'grunted.css'
 			}
 		}
 	});
-	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.registerTask('default',['uglify']);
+	grunt.loadNpmTasks('grunt-postcss');
+	grunt.registerTask('default',['postcss']);
 };
