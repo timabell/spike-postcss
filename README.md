@@ -11,3 +11,12 @@ grunt
 ```
 
 or something like that.
+
+## The commits show the the following build up
+
+1. Empty repo
+1. nodejs version with asdf-vm
+1. Basic postcss processing
+1. Add tailwindcss and process it
+1. Add grunt, process unrelated file
+1. Configure grunt to run postcss, which in turn builds the tailwindcss
